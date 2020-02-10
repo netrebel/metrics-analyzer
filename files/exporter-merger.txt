@@ -1,0 +1,348 @@
+# HELP geoshort_invalid_circleid_total The message contained an invalid circleId
+# TYPE geoshort_invalid_circleid_total counter
+geoshort_invalid_circleid_total{application="geo-short",topic="circleObserved"} 0
+# HELP geoshort_redis_seconds The time it took to mark a circle as observed
+# TYPE geoshort_redis_seconds histogram
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.001"} 0
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.002"} 24
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.003"} 31
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.004"} 32
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.005"} 32
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.006"} 32
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.007"} 32
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.008"} 32
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.009"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.01"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.02"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.03"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.04"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.05"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.1"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.2"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.5"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="0.75"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="1"} 33
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="2"} 34
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="5"} 34
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="10"} 34
+geoshort_redis_seconds_bucket{application="geo-short",topic="circleObserved",le="+Inf"} 34
+geoshort_redis_seconds_sum{application="geo-short",topic="circleObserved"} 1.078588085
+geoshort_redis_seconds_count{application="geo-short",topic="circleObserved"} 34
+# HELP geoshort_redis_seconds_max The time it took to mark a circle as observed
+# TYPE geoshort_redis_seconds_max gauge
+geoshort_redis_seconds_max{application="geo-short",topic="circleObserved"} 0.002595286
+# HELP go_gc_duration_seconds A summary of the GC invocation durations.
+# TYPE go_gc_duration_seconds summary
+go_gc_duration_seconds{quantile="0"} 2.6434e-05
+go_gc_duration_seconds{quantile="0.25"} 4.5324e-05
+go_gc_duration_seconds{quantile="0.5"} 6.221e-05
+go_gc_duration_seconds{quantile="0.75"} 0.000133421
+go_gc_duration_seconds{quantile="1"} 0.00552277
+go_gc_duration_seconds_sum 0.030576922
+go_gc_duration_seconds_count 99
+# HELP go_goroutines Number of goroutines that currently exist.
+# TYPE go_goroutines gauge
+go_goroutines 11
+# HELP go_memstats_alloc_bytes Number of bytes allocated and still in use.
+# TYPE go_memstats_alloc_bytes gauge
+go_memstats_alloc_bytes 1.689792e+06
+# HELP go_memstats_alloc_bytes_total Total number of bytes allocated, even if freed.
+# TYPE go_memstats_alloc_bytes_total counter
+go_memstats_alloc_bytes_total 2.30177176e+08
+# HELP go_memstats_buck_hash_sys_bytes Number of bytes used by the profiling bucket hash table.
+# TYPE go_memstats_buck_hash_sys_bytes gauge
+go_memstats_buck_hash_sys_bytes 1.450912e+06
+# HELP go_memstats_frees_total Total number of frees.
+# TYPE go_memstats_frees_total counter
+go_memstats_frees_total 341724
+# HELP go_memstats_gc_sys_bytes Number of bytes used for garbage collection system metadata.
+# TYPE go_memstats_gc_sys_bytes gauge
+go_memstats_gc_sys_bytes 405504
+# HELP go_memstats_heap_alloc_bytes Number of heap bytes allocated and still in use.
+# TYPE go_memstats_heap_alloc_bytes gauge
+go_memstats_heap_alloc_bytes 1.689792e+06
+# HELP go_memstats_heap_idle_bytes Number of heap bytes waiting to be used.
+# TYPE go_memstats_heap_idle_bytes gauge
+go_memstats_heap_idle_bytes 3.465216e+06
+# HELP go_memstats_heap_inuse_bytes Number of heap bytes that are in use.
+# TYPE go_memstats_heap_inuse_bytes gauge
+go_memstats_heap_inuse_bytes 2.33472e+06
+# HELP go_memstats_heap_objects Number of allocated objects.
+# TYPE go_memstats_heap_objects gauge
+go_memstats_heap_objects 6354
+# HELP go_memstats_heap_released_bytes Number of heap bytes released to OS.
+# TYPE go_memstats_heap_released_bytes gauge
+go_memstats_heap_released_bytes 0
+# HELP go_memstats_heap_sys_bytes Number of heap bytes obtained from system.
+# TYPE go_memstats_heap_sys_bytes gauge
+go_memstats_heap_sys_bytes 5.799936e+06
+# HELP go_memstats_last_gc_time_seconds Number of seconds since 1970 of last garbage collection.
+# TYPE go_memstats_last_gc_time_seconds gauge
+go_memstats_last_gc_time_seconds 1.5813729453694224e+09
+# HELP go_memstats_lookups_total Total number of pointer lookups.
+# TYPE go_memstats_lookups_total counter
+go_memstats_lookups_total 2093
+# HELP go_memstats_mallocs_total Total number of mallocs.
+# TYPE go_memstats_mallocs_total counter
+go_memstats_mallocs_total 348078
+# HELP go_memstats_mcache_inuse_bytes Number of bytes in use by mcache structures.
+# TYPE go_memstats_mcache_inuse_bytes gauge
+go_memstats_mcache_inuse_bytes 3472
+# HELP go_memstats_mcache_sys_bytes Number of bytes used for mcache structures obtained from system.
+# TYPE go_memstats_mcache_sys_bytes gauge
+go_memstats_mcache_sys_bytes 16384
+# HELP go_memstats_mspan_inuse_bytes Number of bytes in use by mspan structures.
+# TYPE go_memstats_mspan_inuse_bytes gauge
+go_memstats_mspan_inuse_bytes 25384
+# HELP go_memstats_mspan_sys_bytes Number of bytes used for mspan structures obtained from system.
+# TYPE go_memstats_mspan_sys_bytes gauge
+go_memstats_mspan_sys_bytes 32768
+# HELP go_memstats_next_gc_bytes Number of heap bytes when next garbage collection will take place.
+# TYPE go_memstats_next_gc_bytes gauge
+go_memstats_next_gc_bytes 4.194304e+06
+# HELP go_memstats_other_sys_bytes Number of bytes used for other system allocations.
+# TYPE go_memstats_other_sys_bytes gauge
+go_memstats_other_sys_bytes 787800
+# HELP go_memstats_stack_inuse_bytes Number of bytes in use by the stack allocator.
+# TYPE go_memstats_stack_inuse_bytes gauge
+go_memstats_stack_inuse_bytes 491520
+# HELP go_memstats_stack_sys_bytes Number of bytes obtained from system for stack allocator.
+# TYPE go_memstats_stack_sys_bytes gauge
+go_memstats_stack_sys_bytes 491520
+# HELP go_memstats_sys_bytes Number of bytes obtained from system.
+# TYPE go_memstats_sys_bytes gauge
+go_memstats_sys_bytes 8.984824e+06
+# HELP http_request_duration_microseconds The HTTP request latencies in microseconds.
+# TYPE http_request_duration_microseconds summary
+http_request_duration_microseconds{handler="prometheus",quantile="0.5"} 1925.135
+http_request_duration_microseconds{handler="prometheus",quantile="0.9"} 5345.41
+http_request_duration_microseconds{handler="prometheus",quantile="0.99"} 5345.41
+http_request_duration_microseconds_sum{handler="prometheus"} 497039.9749999999
+http_request_duration_microseconds_count{handler="prometheus"} 250
+# HELP http_request_size_bytes The HTTP request sizes in bytes.
+# TYPE http_request_size_bytes summary
+http_request_size_bytes{handler="prometheus",quantile="0.5"} 80
+http_request_size_bytes{handler="prometheus",quantile="0.9"} 80
+http_request_size_bytes{handler="prometheus",quantile="0.99"} 80
+http_request_size_bytes_sum{handler="prometheus"} 20000
+http_request_size_bytes_count{handler="prometheus"} 250
+# HELP http_requests_total Total number of HTTP requests made.
+# TYPE http_requests_total counter
+http_requests_total{code="200",handler="prometheus",method="get"} 250
+# HELP http_response_size_bytes The HTTP response sizes in bytes.
+# TYPE http_response_size_bytes summary
+http_response_size_bytes{handler="prometheus",quantile="0.5"} 1498
+http_response_size_bytes{handler="prometheus",quantile="0.9"} 1504
+http_response_size_bytes{handler="prometheus",quantile="0.99"} 1504
+http_response_size_bytes_sum{handler="prometheus"} 373488
+http_response_size_bytes_count{handler="prometheus"} 250
+# TYPE http_server_requests_seconds summary
+http_server_requests_seconds_sum{application="geo-short",exception="None",method="GET",outcome="SUCCESS",status="200",uri="/ping"} 0.189210947
+http_server_requests_seconds_count{application="geo-short",exception="None",method="GET",outcome="SUCCESS",status="200",uri="/ping"} 37
+http_server_requests_seconds_sum{application="geo-short",exception="None",method="GET",outcome="SUCCESS",status="200",uri="/prometheus"} 0.100722101
+http_server_requests_seconds_count{application="geo-short",exception="None",method="GET",outcome="SUCCESS",status="200",uri="/prometheus"} 6
+# TYPE http_server_requests_seconds_max gauge
+http_server_requests_seconds_max{application="geo-short",exception="None",method="GET",outcome="SUCCESS",status="200",uri="/ping"} 0.002137196
+http_server_requests_seconds_max{application="geo-short",exception="None",method="GET",outcome="SUCCESS",status="200",uri="/prometheus"} 0.006714222
+# HELP jvm_buffer_count_buffers An estimate of the number of buffers in the pool
+# TYPE jvm_buffer_count_buffers gauge
+jvm_buffer_count_buffers{application="geo-short",id="mapped"} 0
+jvm_buffer_count_buffers{application="geo-short",id="direct"} 3
+# HELP jvm_buffer_memory_used_bytes An estimate of the memory that the Java virtual machine is using for this buffer pool
+# TYPE jvm_buffer_memory_used_bytes gauge
+jvm_buffer_memory_used_bytes{application="geo-short",id="mapped"} 0
+jvm_buffer_memory_used_bytes{application="geo-short",id="direct"} 1.6785409e+07
+# HELP jvm_buffer_total_capacity_bytes An estimate of the total capacity of the buffers in this pool
+# TYPE jvm_buffer_total_capacity_bytes gauge
+jvm_buffer_total_capacity_bytes{application="geo-short",id="mapped"} 0
+jvm_buffer_total_capacity_bytes{application="geo-short",id="direct"} 1.6785408e+07
+# HELP jvm_classes_loaded_classes The number of classes that are currently loaded in the Java virtual machine
+# TYPE jvm_classes_loaded_classes gauge
+jvm_classes_loaded_classes{application="geo-short"} 15324
+# HELP jvm_classes_unloaded_classes_total The total number of classes unloaded since the Java virtual machine has started execution
+# TYPE jvm_classes_unloaded_classes_total counter
+jvm_classes_unloaded_classes_total{application="geo-short"} 0
+# HELP jvm_gc_live_data_size_bytes Size of old generation memory pool after a full GC
+# TYPE jvm_gc_live_data_size_bytes gauge
+jvm_gc_live_data_size_bytes{application="geo-short"} 3.548672e+07
+# HELP jvm_gc_max_data_size_bytes Max size of old generation memory pool
+# TYPE jvm_gc_max_data_size_bytes gauge
+jvm_gc_max_data_size_bytes{application="geo-short"} 1.34217728e+08
+# HELP jvm_gc_memory_allocated_bytes_total Incremented for an increase in the size of the young generation memory pool after one GC to before the next
+# TYPE jvm_gc_memory_allocated_bytes_total counter
+jvm_gc_memory_allocated_bytes_total{application="geo-short"} 7.7070336e+08
+# HELP jvm_gc_memory_promoted_bytes_total Count of positive increases in the size of the old generation memory pool before GC to after GC
+# TYPE jvm_gc_memory_promoted_bytes_total counter
+jvm_gc_memory_promoted_bytes_total{application="geo-short"} 1.6139264e+07
+# HELP jvm_gc_pause_seconds Time spent in GC pause
+# TYPE jvm_gc_pause_seconds summary
+jvm_gc_pause_seconds_sum{action="end of minor GC",application="geo-short",cause="G1 Evacuation Pause"} 0.343
+jvm_gc_pause_seconds_count{action="end of minor GC",application="geo-short",cause="G1 Evacuation Pause"} 12
+jvm_gc_pause_seconds_sum{action="end of minor GC",application="geo-short",cause="Metadata GC Threshold"} 0.027
+jvm_gc_pause_seconds_count{action="end of minor GC",application="geo-short",cause="Metadata GC Threshold"} 1
+# HELP jvm_gc_pause_seconds_max Time spent in GC pause
+# TYPE jvm_gc_pause_seconds_max gauge
+jvm_gc_pause_seconds_max{action="end of minor GC",application="geo-short",cause="G1 Evacuation Pause"} 0
+jvm_gc_pause_seconds_max{action="end of minor GC",application="geo-short",cause="Metadata GC Threshold"} 0
+# HELP jvm_memory_committed_bytes The amount of memory in bytes that is committed for the Java virtual machine to use
+# TYPE jvm_memory_committed_bytes gauge
+jvm_memory_committed_bytes{application="geo-short",area="nonheap",id="CodeHeap 'non-nmethods'"} 2.555904e+06
+jvm_memory_committed_bytes{application="geo-short",area="nonheap",id="Metaspace"} 9.101312e+07
+jvm_memory_committed_bytes{application="geo-short",area="nonheap",id="CodeHeap 'profiled nmethods'"} 1.9791872e+07
+jvm_memory_committed_bytes{application="geo-short",area="nonheap",id="Compressed Class Space"} 1.1665408e+07
+jvm_memory_committed_bytes{application="geo-short",area="heap",id="G1 Eden Space"} 6.7108864e+07
+jvm_memory_committed_bytes{application="geo-short",area="heap",id="G1 Old Gen"} 6.291456e+07
+jvm_memory_committed_bytes{application="geo-short",area="heap",id="G1 Survivor Space"} 4.194304e+06
+jvm_memory_committed_bytes{application="geo-short",area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 4.718592e+06
+# HELP jvm_memory_max_bytes The maximum amount of memory in bytes that can be used for memory management
+# TYPE jvm_memory_max_bytes gauge
+jvm_memory_max_bytes{application="geo-short",area="nonheap",id="CodeHeap 'non-nmethods'"} 5.828608e+06
+jvm_memory_max_bytes{application="geo-short",area="nonheap",id="Metaspace"} -1
+jvm_memory_max_bytes{application="geo-short",area="nonheap",id="CodeHeap 'profiled nmethods'"} 1.22912768e+08
+jvm_memory_max_bytes{application="geo-short",area="nonheap",id="Compressed Class Space"} 1.073741824e+09
+jvm_memory_max_bytes{application="geo-short",area="heap",id="G1 Eden Space"} -1
+jvm_memory_max_bytes{application="geo-short",area="heap",id="G1 Old Gen"} 1.34217728e+08
+jvm_memory_max_bytes{application="geo-short",area="heap",id="G1 Survivor Space"} -1
+jvm_memory_max_bytes{application="geo-short",area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 1.22916864e+08
+# HELP jvm_memory_used_bytes The amount of used memory
+# TYPE jvm_memory_used_bytes gauge
+jvm_memory_used_bytes{application="geo-short",area="nonheap",id="CodeHeap 'non-nmethods'"} 1.350528e+06
+jvm_memory_used_bytes{application="geo-short",area="nonheap",id="Metaspace"} 8.8657448e+07
+jvm_memory_used_bytes{application="geo-short",area="nonheap",id="CodeHeap 'profiled nmethods'"} 1.8311936e+07
+jvm_memory_used_bytes{application="geo-short",area="nonheap",id="Compressed Class Space"} 1.0783368e+07
+jvm_memory_used_bytes{application="geo-short",area="heap",id="G1 Eden Space"} 6.0817408e+07
+jvm_memory_used_bytes{application="geo-short",area="heap",id="G1 Old Gen"} 4.6508032e+07
+jvm_memory_used_bytes{application="geo-short",area="heap",id="G1 Survivor Space"} 4.194304e+06
+jvm_memory_used_bytes{application="geo-short",area="nonheap",id="CodeHeap 'non-profiled nmethods'"} 4.259456e+06
+# HELP jvm_threads_daemon_threads The current number of live daemon threads
+# TYPE jvm_threads_daemon_threads gauge
+jvm_threads_daemon_threads{application="geo-short"} 20
+# HELP jvm_threads_live_threads The current number of live threads including both daemon and non-daemon threads
+# TYPE jvm_threads_live_threads gauge
+jvm_threads_live_threads{application="geo-short"} 47
+# HELP jvm_threads_peak_threads The peak live thread count since the Java virtual machine started or peak was reset
+# TYPE jvm_threads_peak_threads gauge
+jvm_threads_peak_threads{application="geo-short"} 48
+# HELP jvm_threads_states_threads The current number of threads having NEW state
+# TYPE jvm_threads_states_threads gauge
+jvm_threads_states_threads{application="geo-short",state="new"} 0
+jvm_threads_states_threads{application="geo-short",state="runnable"} 11
+jvm_threads_states_threads{application="geo-short",state="blocked"} 0
+jvm_threads_states_threads{application="geo-short",state="waiting"} 27
+jvm_threads_states_threads{application="geo-short",state="timed-waiting"} 9
+jvm_threads_states_threads{application="geo-short",state="terminated"} 0
+# HELP nsq_exporter_scrape_duration_seconds Duration of a scrape job of the NSQ exporter
+# TYPE nsq_exporter_scrape_duration_seconds summary
+nsq_exporter_scrape_duration_seconds{result="success",quantile="0.5"} 0.001027842
+nsq_exporter_scrape_duration_seconds{result="success",quantile="0.9"} 0.004152355
+nsq_exporter_scrape_duration_seconds{result="success",quantile="0.99"} 0.004152355
+nsq_exporter_scrape_duration_seconds_sum{result="success"} 0.221293744
+nsq_exporter_scrape_duration_seconds_count{result="success"} 250
+# HELP nsq_request_seconds The time it took to process a nsq request
+# TYPE nsq_request_seconds histogram
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.001"} 0
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.002"} 21
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.003"} 29
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.004"} 32
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.005"} 32
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.006"} 32
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.007"} 32
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.008"} 32
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.009"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.01"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.02"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.03"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.04"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.05"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.1"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.2"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.5"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="0.75"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="1"} 33
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="2"} 34
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="5"} 34
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="10"} 34
+nsq_request_seconds_bucket{application="geo-short",topic="circleObserved",le="+Inf"} 34
+nsq_request_seconds_sum{application="geo-short",topic="circleObserved"} 1.099689058
+nsq_request_seconds_count{application="geo-short",topic="circleObserved"} 34
+# HELP nsq_request_seconds_max The time it took to process a nsq request
+# TYPE nsq_request_seconds_max gauge
+nsq_request_seconds_max{application="geo-short",topic="circleObserved"} 0.00276693
+# HELP nsq_request_total The number of nsq requests processed by result
+# TYPE nsq_request_total counter
+nsq_request_total{application="geo-short",details="ok",result="success",topic="circleObserved"} 34
+nsq_request_total{application="geo-short",details="no data",result="invalid-format",topic="circleObserved"} 0
+nsq_request_total{application="geo-short",details="date",result="timestamp-out-of-range",topic="circleObserved"} 0
+nsq_request_total{application="geo-short",details="unknown",result="error",topic="circleObserved"} 0
+nsq_request_total{application="geo-short",details="redis",result="error",topic="circleObserved"} 0
+nsq_request_total{application="geo-short",details="json",result="invalid-format",topic="circleObserved"} 0
+nsq_request_total{application="geo-short",details="userid",result="invalid-format",topic="circleObserved"} 0
+# HELP process_cpu_seconds_total Total user and system CPU time spent in seconds.
+# TYPE process_cpu_seconds_total counter
+process_cpu_seconds_total 0.53
+# HELP process_cpu_usage The "recent cpu usage" for the Java Virtual Machine process
+# TYPE process_cpu_usage gauge
+process_cpu_usage{application="geo-short"} 0.005736604418405956
+# HELP process_files_max_files The maximum file descriptor count
+# TYPE process_files_max_files gauge
+process_files_max_files{application="geo-short"} 65536
+# HELP process_files_open_files The open file descriptor count
+# TYPE process_files_open_files gauge
+process_files_open_files{application="geo-short"} 44
+# HELP process_max_fds Maximum number of open file descriptors.
+# TYPE process_max_fds gauge
+process_max_fds 65536
+# HELP process_open_fds Number of open file descriptors.
+# TYPE process_open_fds gauge
+process_open_fds 8
+# HELP process_resident_memory_bytes Resident memory size in bytes.
+# TYPE process_resident_memory_bytes gauge
+process_resident_memory_bytes 1.2906496e+07
+# HELP process_start_time_seconds Start time of the process since unix epoch.
+# TYPE process_start_time_seconds gauge
+process_start_time_seconds{application="geo-short"} 1.581372603431e+09
+process_start_time_seconds 1.58135793679e+09
+# HELP process_uptime_seconds The uptime of the Java virtual machine
+# TYPE process_uptime_seconds gauge
+process_uptime_seconds{application="geo-short"} 383.166
+# HELP process_virtual_memory_bytes Virtual memory size in bytes.
+# TYPE process_virtual_memory_bytes gauge
+process_virtual_memory_bytes 1.7547264e+07
+# HELP system_cpu_count The number of processors available to the Java virtual machine
+# TYPE system_cpu_count gauge
+system_cpu_count{application="geo-short"} 1
+# HELP system_cpu_usage The "recent cpu usage" for the whole system
+# TYPE system_cpu_usage gauge
+system_cpu_usage{application="geo-short"} 0.027584523373611617
+# HELP system_load_average_1m The sum of the number of runnable entities queued to available processors and the number of runnable entities running on the available processors averaged over a period of time
+# TYPE system_load_average_1m gauge
+system_load_average_1m{application="geo-short"} 0.0048828125
+# TYPE tomcat_global_error_total counter
+tomcat_global_error_total{application="geo-short",name="http-nio-8999"} 0
+# TYPE tomcat_global_received_bytes_total counter
+tomcat_global_received_bytes_total{application="geo-short",name="http-nio-8999"} 0
+# TYPE tomcat_global_request_max_seconds gauge
+tomcat_global_request_max_seconds{application="geo-short",name="http-nio-8999"} 0.223
+# TYPE tomcat_global_request_seconds summary
+tomcat_global_request_seconds_sum{application="geo-short",name="http-nio-8999"} 0.502
+tomcat_global_request_seconds_count{application="geo-short",name="http-nio-8999"} 43
+# TYPE tomcat_global_sent_bytes_total counter
+tomcat_global_sent_bytes_total{application="geo-short",name="http-nio-8999"} 108967
+# TYPE tomcat_sessions_active_current_sessions gauge
+tomcat_sessions_active_current_sessions{application="geo-short"} 0
+# TYPE tomcat_sessions_active_max_sessions gauge
+tomcat_sessions_active_max_sessions{application="geo-short"} 0
+# TYPE tomcat_sessions_alive_max_seconds gauge
+tomcat_sessions_alive_max_seconds{application="geo-short"} 0
+# TYPE tomcat_sessions_created_sessions_total counter
+tomcat_sessions_created_sessions_total{application="geo-short"} 0
+# TYPE tomcat_sessions_expired_sessions_total counter
+tomcat_sessions_expired_sessions_total{application="geo-short"} 0
+# TYPE tomcat_sessions_rejected_sessions_total counter
+tomcat_sessions_rejected_sessions_total{application="geo-short"} 0
+# TYPE tomcat_threads_busy_threads gauge
+tomcat_threads_busy_threads{application="geo-short",name="http-nio-8999"} 1
+# TYPE tomcat_threads_config_max_threads gauge
+tomcat_threads_config_max_threads{application="geo-short",name="http-nio-8999"} 2
+# TYPE tomcat_threads_current_threads gauge
+tomcat_threads_current_threads{application="geo-short",name="http-nio-8999"} 1
