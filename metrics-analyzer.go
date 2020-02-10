@@ -25,17 +25,21 @@ func parseFile(path string) (map[string]int, error) {
 			// fmt.Printf("Skipped comment line: %s\n", line)
 			continue
 		} else {
-			// Get just the metric name
-			fields := strings.Fields(line)
-			metric := fields[0]
-			reg := regexp.MustCompile(`{`)
-			metric = reg.Split(metric, -1)[0]
-
 			// fmt.Printf("Metric: %s\n", metric)
+			metric := getMetricName(line)
 			metricNames[metric] = 1
 		}
 	}
 	return metricNames, nil
+}
+
+// Get just the metric name
+func getMetricName(line string) string {
+	fields := strings.Fields(line)
+	metric := fields[0]
+	reg := regexp.MustCompile(`{`)
+	metric = reg.Split(metric, -1)[0]
+	return metric
 }
 
 func main() {
